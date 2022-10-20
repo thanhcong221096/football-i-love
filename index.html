@@ -1,1 +1,17 @@
-Xin chao
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			var settings = {
+				"url": "http://api.football-data.org/v4/competitions/PL",
+				"method": "GET",
+				"timeout": 0,
+				"headers": {
+					"Access-Control-Allow-Origin": "*",
+					"Access-Control-Allow-Credentials": true,
+					"X-Auth-Token": "c89ab6d4f162454abef15f593aa89e21"
+				},
+			};
+
+		$.ajax(settings).done(function (response) {
+			console.log(response);
+		});
+		</script>
